@@ -32,5 +32,5 @@ play:-nl,write('==================='),nl,
       playPlayerNumber
       ). %pergunta outra vez).
 
-playing([p1,play,Deck],Player):- deck(Deck),hand_player1(Deck),Player = p1.
-playing([p2,play,Deck],Player):- deck(Deck),hand_player2(Deck),Player = p2.
+playing([p1,play,Deck],Player):-hand_player1(Deck),Player = p1.
+playing([p2,play,Deck],Player):- hand_player2(Deck),Player = p2.
