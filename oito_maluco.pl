@@ -1,7 +1,7 @@
 :-module(oito_maluco,[deck/1,colorcard/2,card/1,ranks/1,suits/1,rankshigher/2,
 samesuit/2,color/2,colorofcard/2,printcard/1,newdeck/1,deckshuffle/2,
 deckdeal/3,remove_list/3,dealer/3,deal/3]).
-~
+
 %baralho
 deck(Z):-findall(c(X,Y),card(c(X,Y)),Z).  
 

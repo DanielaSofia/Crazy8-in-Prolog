@@ -26,12 +26,11 @@ play:-nl,write('==================='),nl,
     nl,write('Which player do you want to be? Player 1(p1) or Player 2(p2)?'),
     nl,read(Player),nl,
     (
-     Player \= p1, Player \= p2,!,
-     write('Error: not a valid player!'),nl,
-     playPlayerNumber; %pergunta outra vez
-     hand_player1(Deck),nl,
-     playing([p1,play,Deck],Player);playing([p2,play,Deck],Player)
-     ).
+     Player \= p1, Player \= p2,!,  playing([p1,play,Deck],Player);  playing([p2,play,Deck],Player),!,
+     
+      write('Error: not a valid player!'),nl,
+      playPlayerNumber
+      ). %pergunta outra vez).
 
-playing([p1,play,Deck],Player):- hand_player1(Deck),Player = p1.
-playing([p2,play,Deck],Player):-hand_player2(Deck),Player = p2.
+playing([p1,play,Deck],Player):- deck(Deck),hand_player1(Deck),Player = p1.
+playing([p2,play,Deck],Player):- deck(Deck),hand_player2(Deck),Player = p2.
