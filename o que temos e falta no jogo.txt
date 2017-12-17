@@ -1,0 +1,15 @@
+o que temos definido:
+
+-o deck(baralho)
+- verifica se sao do mesmo naipe as cartas
+- a cor possiveis das cartas nos diferentes naipes
+-a definicao de carta
+- os naipes
+- valor das cartas em relacao umas as outras
+-imprime a carta
+-cria novo baralho
+-deal(cartas para cada jogador)
+-hand_player1(da as cartas para o jogador 1)
+-nextplayer - vrifica se x e o proximo jogador.
+- utility - condicao do jogador que ganha o jogo
+-winhand - mao que ganha o jogo
