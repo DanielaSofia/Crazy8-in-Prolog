@@ -30,9 +30,10 @@ play:-nl,write('==================='),nl,
       write('Error: not a valid player!'),nl,
       %pergunta outra vez).
       playPlayerNumber,!;
-
-       playing([p1,play,Deck],Player);  playing([p2,play,Deck],Player)
+      write('You are p1'),playing([p1,play,Deck],Player),
+      nl; write('You are P2'),  playing([p2,play,Deck],Player)
       ). 
 
 playing([p1,play,Deck],Player):-hand_player1(Deck),Player = p1,write(Deck).
 playing([p2,play,Deck],Player):- hand_player2(Deck),Player = p2,write(Deck).
+
