@@ -1,0 +1,1 @@
+compilar o ficheiro oitomaluco2.pl para usar o que foi feito para esta segunda entrega
